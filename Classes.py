@@ -35,7 +35,7 @@ class Square(Shape):
         return self.__side
     def area(self):
         print "Square area"
-        return self.side * self.side
+        return self.__side * self.__side
 
 class Rangle(Square,Shape,):
     def area1(self):
@@ -48,5 +48,8 @@ class Rangle(Square,Shape,):
 
 
 s=Rangle()
-s.side=5
-s
+s.setSide(5)
+
+print s.area()
+print s
+print s.getSide()
